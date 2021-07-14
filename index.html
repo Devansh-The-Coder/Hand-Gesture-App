@@ -1,0 +1,79 @@
+ 
+<html>
+  <head>
+    <title>NGO Image</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+  <div class="container">
+  
+    <center>
+<h3 class="heading">Gesture to Talk<br><br>
+
+</h3>
+      <br><br>
+
+      <p style="font-size: 22px;"> Express things by gestures
+      	<br>
+        <b style="color: yellow">Are you feeling amazing?</b>
+        <br>
+        <b style="color: black">Are you feeling the best?</b>
+        <br>
+        <b style="color: red">Are you feeling Victorious?</b>
+        <br>      
+      </p><br><br>
+<p style="color: red; font-size: 18px;">
+Take your selfie and click predict to tell others your mood!
+</p>
+      
+<div class="col-md-4 col-sm-12 col-xs-12"><br><label>Webcam View -  </label><br> 
+<div id="camera">
+</div>
+        <br><br>
+<button onclick="takeSnapshot()" style="background-color: purple; color: white; font-size: 20px; border-radius: 30px;">Capture Gesture</button>
+      </div>
+<br>
+<div class="col-md-4 col-sm-12 col-xs-12">
+ <b><label>Analyzing of gesture 1 :</label></b>
+ 
+ <b><p class="emotion_name" id="result_emotion_name"></p></b>
+
+  <b><p class="emoji" id="update_emoji"></p></b>
+  <!--Prediction 2-->
+
+  <b><label>Analyzing of gesture 2 :</label></b>
+ 
+ <b><p class="emotion_name" id="result_emotion_name_2"></p></b>
+
+  <b><p class="emoji" id="update_emoji_2"></p></b>
+
+</div>
+
+
+<div class="col-md-4 col-sm-12 col-xs-12">
+  <label>Snapshot View -  </label>
+  
+<div id="result">
+</div>
+  <br><br>
+<button onclick="checkImage()" style="background-color: orangered; color: rgb(255, 255, 255); font-size: 20px; border-radius: 30px;">Predict Emotion</button>
+</div>
+    </center>
+
+  </div>
+
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
